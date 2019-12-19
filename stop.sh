@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-PID=$(ps -ef | grep yourapp.jar | grep -v grep | awk '{ print $2 }')
+PID=$(ps -ef | grep /home/admin/mall/mall/mall-admin/target/mall-admin-1.0-SNAPSHOT.jar | grep -v grep | awk '{ print $2 }')
 if [ -z "$PID" ]
 then
     echo Application is already stopped
